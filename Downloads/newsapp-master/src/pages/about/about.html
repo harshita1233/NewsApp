@@ -1,0 +1,31 @@
+<ion-header no-border >
+  <ion-navbar color="dark">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>User Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+ 
+    <ion-item>
+      <ion-avatar>
+        <img src="{{data.photo}}">
+      </ion-avatar>
+      </ion-item>
+   
+
+  <ion-card-content>
+    <ion-icon name="person" style="font-size: 25px">    {{data.name}}</ion-icon>
+    <ion-icon name="mail"  style="font-size: 25px">    {{data.emailid}}</ion-icon>
+  </ion-card-content>
+ 
+ 
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <div text-center>
+      <button ion-button round color="dark" end>Logout</button>
+      </div>
+  </ion-toolbar>
+</ion-footer>
